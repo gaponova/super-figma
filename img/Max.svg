@@ -1,0 +1,18 @@
+<svg width="106" height="84" viewBox="0 0 106 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M89.5443 40.681L88.7658 42.8296L87.7158 40.7998L79.9619 25.8089L64.9711 18.055L62.9412 17.0051L65.0898 16.2266L101.43 3.05981L103.439 2.33206L102.711 4.34065L89.5443 40.681Z" fill="#D06CFF" stroke="#212429" stroke-width="2"/>
+<g opacity="0.15" filter="url(#filter0_f)">
+<rect width="52.3366" height="27.2817" rx="4.98216" transform="matrix(-1 0 0 1 66.2428 43.5508)" fill="#580707"/>
+<rect x="0.905848" y="-0.905848" width="54.1483" height="29.0934" rx="5.88801" transform="matrix(-1 0 0 1 68.0545 43.5508)" stroke="#212429" stroke-width="1.8117"/>
+</g>
+<rect x="1" y="-1" width="60.1497" height="29.8497" transform="matrix(-1 0 0 1 71.1496 37.4153)" fill="#D06CFF" stroke="#212429" stroke-width="2"/>
+<path d="M24.1023 45.5163V57.5641H26.0299V49.1995L29.9713 56.1356H31.2449L35.169 49.1995V57.5641H37.1139V45.5163H35.169L30.6081 53.5539L26.0299 45.5163H24.1023Z" fill="#212429"/>
+<path d="M38.9486 53.0892C38.9486 55.7741 40.8418 57.7878 43.3547 57.7878C44.5078 57.7878 45.5577 57.3575 46.3322 56.6175V57.5641H48.1221V48.6143H46.3322V49.5609C45.5577 48.8208 44.5078 48.3906 43.3547 48.3906C40.8418 48.3906 38.9486 50.4043 38.9486 53.0892ZM43.544 50.1805C45.093 50.1805 46.2978 51.4369 46.2978 53.0892C46.2978 54.7415 45.093 55.9979 43.544 55.9979C42.0122 55.9979 40.8074 54.7415 40.8074 53.0892C40.8074 51.4369 42.0122 50.1805 43.544 50.1805Z" fill="#212429"/>
+<path d="M49.4265 57.5641H51.5435L53.9186 54.4144L56.2766 57.5641H58.3935L54.9685 52.9859L58.2386 48.6143H56.1217L53.9186 51.5402L51.6984 48.6143H49.5987L52.8516 52.9687L49.4265 57.5641Z" fill="#212429"/>
+<defs>
+<filter id="filter0_f" x="0.771384" y="30.416" width="78.6062" height="53.5513" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="5.66155" result="effect1_foregroundBlur"/>
+</filter>
+</defs>
+</svg>
