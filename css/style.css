@@ -51,7 +51,7 @@ html {
 body {
   height: 100%;
   font: 16px/1.4 Montserrat, sans-serif;
-  background: #E5E5E5 url(../img/intro.jpg) center -16px no-repeat;
+  background: #ecedf2 url(../img/intro.jpg) center -16px no-repeat;
 }
 
 .btn {
@@ -77,6 +77,15 @@ body {
   background-color: #18A0FB;
 }
 
+.title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 140%;
+  text-align: center;
+  color: #212429;
+  margin-bottom: 30px;
+}
+
 .wrapper {
   min-height: 100%;
   /* overflow: hidden; */
@@ -88,7 +97,7 @@ body {
 
 .header {
   position: sticky;
-  /* position: fixed; */
+  /* sticky чтобы менюшка при скролле не дёргалась */
   width: 100%;
   top: 8px;
   left: 0;
@@ -192,11 +201,12 @@ body {
 .intro__info {
   position: relative;
   z-index: 2;
+  padding-bottom: 106px;
 }
 
 .intro__info::after {
   position: absolute;
-  bottom: -208px;
+  bottom: -100px;
   right: -127px;
   content: "";
   display: inline-block;
@@ -258,11 +268,57 @@ body {
   padding: 7px 0 8px 32px;
 }
 
-.intro__btn {}
+.intro-popular {
+  position: relative;
+  background: #FFFFFF;
+  border-radius: 30px;
+  padding: 67px 100px 0;
+}
 
-.intro-btn {}
+.intro-popular::after {
+  content: "";
+  position: absolute;
+  bottom: 120px;
+  right: -110px;
+  display: block;
+  width: 260px;
+  height: 88px;
+  background: url(../img/text-style.svg) no-repeat;
+  box-shadow: 0px 20px 36.31px -18.4773px rgba(130, 130, 130, 0.25);
+  border-radius: 12px;
+}
 
-.intro__img {}
+
+.intro-popular__title {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 140%;
+  text-align: center;
+  color: #212429;
+  margin-bottom: 30px;
+}
+
+.intro-popular__text {
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  color: #212429;
+}
+
+.intro-popular__text {
+  margin-bottom: 20px;
+}
+
+.intro-popular__img {
+  position: relative;
+  margin-top: 41px;
+}
+
+
+/*----------author----------*/
+
+
+
 
 /* accordion */
 
@@ -485,18 +541,32 @@ input:checked~.tab-content {
 
 @media only screen and (max-width: 1700px) {}
 
-@media only screen and (max-width: 1400px) {}
+@media only screen and (max-width: 1440px) {
+
+  .intro-popular::after {
+    right: 20px;
+  }
+
+  #toTop {
+    bottom: 20px;
+    right: 20px;
+  }
+}
 
 @media only screen and (max-width: 1200px) {}
 
 @media only screen and (max-width: 1050px) {
 
   body {
-    background: #E5E5E5 url(../img/intro-mobile.jpg) center -16px no-repeat;
+    background: #ecedf2 url(../img/intro-mobile-2.jpg) center -16px no-repeat;
   }
 
   .header__list li {
     margin-left: 25px;
+  }
+
+  .intro {
+    padding-top: 40px;
   }
 
   .intro__info {
@@ -504,7 +574,7 @@ input:checked~.tab-content {
   }
 
   .intro__info::after {
-    bottom: -178px;
+    bottom: 5px;
     right: 47px;
   }
 
@@ -552,6 +622,7 @@ input:checked~.tab-content {
     display: block;
     width: 30px;
     height: 20px;
+    cursor: pointer;
   }
 
   .header__burger span {
@@ -635,6 +706,109 @@ input:checked~.tab-content {
 
 @media only screen and (max-width: 880px) {}
 
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 768px) {
 
-@media only screen and (max-width: 540px) {}
+  .intro {
+    padding-top: 10px;
+  }
+
+  .intro__info::after {
+    opacity: 0.2;
+  }
+
+  .intro-course {
+    margin: 0 10px;
+  }
+
+
+  .intro-popular::after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 580px) {
+
+
+  .intro__info {
+    padding-bottom: 30px;
+  }
+
+  .intro-course__title {
+    font-size: 46px;
+  }
+
+  .intro-course__subtitle {
+    text-align: center;
+  }
+
+  .intro-list {
+    max-width: 370px;
+    margin: 0 auto 40px;
+  }
+
+  .intro__info::after {
+    display: none;
+  }
+
+  .intro__btn {
+    margin-right: 0;
+  }
+
+  .intro-popular {
+    padding: 30px;
+  }
+
+  .intro-popular__title {
+    font-size: 30px;
+    line-height: 130%;
+  }
+}
+
+@media screen and (max-width: 440px) {
+
+  .intro-course {
+    display: block;
+  }
+
+  .intro-course__title {
+    line-height: 50px;
+    margin: 10px 0 20px;
+  }
+
+  .intro-course__subtitle {
+    margin-bottom: 20px;
+  }
+
+  .intro-popular {
+    padding: 5px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+
+  .header__burger {
+    margin-right: 10px;
+  }
+
+  .intro-course__title {
+    font-size: 38px;
+  }
+
+  .intro-course__subtitle {
+    font-size: 20px;
+  }
+
+  .intro-popular__title {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .intro-popular {
+    padding-top: 30px;
+  }
+
+  #toTop {
+    bottom: 5px;
+    right: 5px;
+  }
+}
