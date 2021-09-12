@@ -277,7 +277,7 @@ body {
 .intro-popular::after {
   content: "";
   position: absolute;
-  bottom: 120px;
+  bottom: 126px;
   right: -110px;
   display: block;
   width: 260px;
@@ -331,26 +331,38 @@ body {
   background: url(../img/author-light-2.png) no-repeat;
 }
 
-.author__container {}
+.author__container {
+  position: relative;
+}
+
+.author__container::before {
+  content: "";
+  position: absolute;
+  top: -58px;
+  left: -70px;
+  display: block;
+  width: 150px;
+  height: 105px;
+  background: url(../img/mira.svg) no-repeat;
+}
+
+@media screen and (max-width: 1360px) {
+
+  .author__container::before {
+    display: none;
+  }
+
+}
 
 .author-block {
   position: relative;
   background: radial-gradient(circle at top left, #17202F, #404952);
   border-radius: 30px;
   padding: 57px 0 0;
+  overflow: hidden;
   z-index: 2;
 }
 
-.author-block::before {
-  content: "";
-  position: absolute;
-  top: -57px;
-  left: -85px;
-  display: block;
-  width: 150px;
-  height: 105px;
-  background: url(../img/mira.svg) no-repeat;
-}
 
 
 
@@ -362,19 +374,19 @@ body {
 
 .author__row {
   display: flex;
-  flex-wrap: wrap;
 }
 
-.author-info {}
+.author-info__photo {
+  margin-left: -77px;
+}
 
 .author-info__photo img {
   display: block;
-  border-radius: 0 0 0 30px;
 }
 
 .author-info__achievements {
   flex: 0 1 540px;
-  padding: 45px 15px 30px 3px;
+  padding: 45px 15px 30px 10px;
 }
 
 .author-info__achievement-title {
@@ -428,7 +440,7 @@ body {
   content: "";
   display: block;
   width: 100%;
-  top: 40px;
+  top: 37px;
   left: 0;
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -436,15 +448,14 @@ body {
 .author-social__item {
   display: flex;
   align-items: center;
-
 }
 
 .author-social__item_1 {
-  margin-bottom: 21px;
+  margin-bottom: 16px;
 }
 
 .author-social__item_2 {
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .author-social__text {
@@ -693,8 +704,25 @@ input:checked~.tab-content {
     right: 20px;
   }
 
-  .author__row {
-    flex-direction: column-reverse;
+  .author {
+    text-align: center;
+  }
+
+  .author-info__achievements {
+    flex: 0 1 460px;
+    padding: 15px 15px 0;
+  }
+
+  .author-info__achievement-title {
+    font-size: 49px;
+  }
+
+  .author-info__achievement-text {
+    margin: 0 auto 30px;
+  }
+
+  .author-info__achievement-text {
+    max-width: 700px;
   }
 
   .author-block::before {
@@ -705,12 +733,19 @@ input:checked~.tab-content {
     flex-direction: column-reverse;
   }
 
-  .author-info__achievements {
-    padding: 57px 15px 0;
-  }
+
 
   .author-awards {
-    justify-content: flex-start;
+    justify-content: center;
+  }
+
+  .author-social {
+    margin: 0 auto;
+  }
+
+  .author-info__photo {
+    margin: 0 auto;
+    ;
   }
 
   #toTop {
@@ -869,14 +904,16 @@ input:checked~.tab-content {
     margin-right: 20px;
   }
 
-  .author-info__achievement-title {
-    font-size: 49px;
-  }
+
 }
 
 @media only screen and (max-width: 880px) {}
 
 @media only screen and (max-width: 768px) {
+
+  .title {
+    font-size: 28px;
+  }
 
   .intro {
     padding-top: 10px;
@@ -903,6 +940,10 @@ input:checked~.tab-content {
 }
 
 @media only screen and (max-width: 580px) {
+
+  .intro {
+    padding-bottom: 40px;
+  }
 
 
   .intro__info {
@@ -934,10 +975,7 @@ input:checked~.tab-content {
     padding: 30px;
   }
 
-  .title {
-    font-size: 30px;
-    line-height: 130%;
-  }
+
 
   .author-info__achievement-title {
     font-size: 42px;
@@ -945,7 +983,7 @@ input:checked~.tab-content {
 
   .author-awards {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .author-awards__text {
@@ -987,6 +1025,7 @@ input:checked~.tab-content {
 
   .intro-course {
     display: block;
+    text-align: center;
   }
 
   .intro-course__title {
@@ -998,8 +1037,14 @@ input:checked~.tab-content {
     margin-bottom: 20px;
   }
 
+  .intro-list {
+    margin-bottom: 20px;
+  }
+
   .intro-popular {
-    padding: 5px;
+    padding: 20px 10px;
+    border-radius: 0;
+
   }
 
   .author-info__photo {
