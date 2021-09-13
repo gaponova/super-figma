@@ -287,7 +287,6 @@ body {
   border-radius: 12px;
 }
 
-
 .intro-popular__title {
   font-weight: bold;
   font-size: 40px;
@@ -315,6 +314,7 @@ body {
 
 
 /*----------author----------*/
+
 
 .author {
   position: relative;
@@ -351,7 +351,6 @@ body {
   .author__container::before {
     display: none;
   }
-
 }
 
 .author-block {
@@ -362,9 +361,6 @@ body {
   overflow: hidden;
   z-index: 2;
 }
-
-
-
 
 .author-block__title {
   color: #fff;
@@ -420,8 +416,6 @@ body {
   padding-right: 20px;
 }
 
-.awards-icons {}
-
 .awards-icon:not(:first-child) {
   margin-left: 10px;
 }
@@ -471,6 +465,43 @@ body {
   color: #fff;
   margin-left: 20px;
 }
+
+
+/*----------works----------*/
+
+
+.works {
+  padding: 96px 0;
+}
+
+.work__title {
+  margin-bottom: 42px;
+}
+
+.work__gallery {
+  max-width: 1920px;
+  /* width: 2570px; */
+}
+
+.gallery-items {
+  display: grid;
+  grid-template: auto / repeat(auto-fit, 25%);
+}
+
+.gallery-item {
+  position: relative;
+  padding: 0 0 75% 0;
+}
+
+.gallery-item__work {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 
 /* accordion */
@@ -904,6 +935,13 @@ input:checked~.tab-content {
     margin-right: 20px;
   }
 
+  .gallery-items {
+    grid-template: auto / repeat(auto-fit, 50%);
+  }
+
+  .works {
+    padding: 40px 0;
+  }
 
 }
 
@@ -975,8 +1013,6 @@ input:checked~.tab-content {
     padding: 30px;
   }
 
-
-
   .author-info__achievement-title {
     font-size: 42px;
   }
@@ -998,6 +1034,8 @@ input:checked~.tab-content {
   .author-info__photo {
     max-width: 400px;
   }
+
+
 }
 
 @media screen and (max-width: 440px) {
