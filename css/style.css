@@ -881,7 +881,10 @@ input:checked~.tab-content {
 
   .author-info__photo {
     margin: 0 auto;
-    ;
+  }
+
+  .program-header__img {
+    max-width: 700px;
   }
 
   #toTop {
@@ -1048,7 +1051,40 @@ input:checked~.tab-content {
     padding: 40px 0;
   }
 
+  .program {
+    padding: 40px 0;
+  }
 
+  .program-header__img {
+    max-width: 520px;
+    top: -40px;
+    left: 200px;
+    opacity: 0.2;
+  }
+
+  .program__logo {
+    margin: 0 auto 31px;
+  }
+
+  .program__btn {
+    text-align: center;
+  }
+
+  .program-course {
+    justify-content: center;
+    margin: 0 auto 10px;
+  }
+
+  .program-header__subtitle {
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto 20px;
+  }
+
+  .program-header__author {
+    font-weight: 500;
+    text-align: center;
+  }
 
 }
 
@@ -1080,6 +1116,16 @@ input:checked~.tab-content {
 
   .author-info__photo {
     max-width: 450px;
+  }
+
+  .program-header {
+    padding: 20px;
+  }
+
+  .program-header__img {
+    max-width: 300px;
+    top: 50px;
+    left: 150px;
   }
 
 }
@@ -1142,7 +1188,9 @@ input:checked~.tab-content {
     max-width: 400px;
   }
 
-
+  .program-header__img {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 440px) {
@@ -1204,6 +1252,10 @@ input:checked~.tab-content {
   .author-awards__text {
     font-size: 18px;
     line-height: 140%;
+  }
+
+  .program-course__title {
+    font-size: 30px;
   }
 
   #toTop {
