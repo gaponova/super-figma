@@ -496,7 +496,7 @@ body {
 .program {
   background-color: #fff;
   padding-top: 115px;
-  padding-bottom: 100px;
+  padding-bottom: 69px;
 }
 
 .program__header {
@@ -564,7 +564,6 @@ body {
   margin-left: 11px;
 }
 
-
 .program-header__subtitle {
   max-width: 480px;
   font-size: 18px;
@@ -609,8 +608,7 @@ body {
   margin-bottom: 20px;
 }
 
-
-/* accordion */
+/* Start accordion */
 
 .tab {
   position: relative;
@@ -711,7 +709,6 @@ body {
   padding-bottom: 100px;
 }
 
-
 /* checked */
 /* input:checked+.tab-label {
   padding-bottom: 20px;
@@ -798,6 +795,30 @@ input:checked~.tab-content {
 .first-chapter__item img {
   display: block;
 }
+
+/* End accordion */
+
+/*----------benefits----------*/
+
+.benefits {}
+
+.benefits__container {}
+
+.benefits__title {}
+
+.benefits__row {}
+
+.benefits__col {}
+
+.benefits__item {}
+
+.item-benefits {}
+
+.item-benefits__icon {}
+
+.item-benefits__title {}
+
+.item-benefits__desc {}
 
 
 /*----------Кнопка Наверх----------*/
