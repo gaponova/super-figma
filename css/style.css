@@ -800,13 +800,51 @@ input:checked~.tab-content {
 
 /*----------benefits----------*/
 
-.benefits {}
+.benefits {
+  padding: 100px 0;
+  background: #E9EBF1;
+}
 
-.benefits__container {}
+.benefits__container {
+  position: relative;
+}
 
-.benefits__title {}
+.benefits__container::before {
+  content: "";
+  display: block;
+  width: 805px;
+  height: 805px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -230px;
+  background: url(../img/benefits-light.png) no-repeat;
+  /* border: 1px solid red; */
+}
 
-.benefits__row {}
+.benefits__title {
+  position: relative;
+  max-width: 950px;
+  margin: 0 auto 55px;
+}
+
+.benefits__title::before {
+  content: "";
+  display: block;
+  width: 102px;
+  height: 62px;
+  position: absolute;
+  top: -50px;
+  left: 8px;
+  background: url(../img/Pavel.svg) no-repeat;
+}
+
+.benefits__row {
+  display: grid;
+  grid-template-columns: 346px 295px 310px;
+  grid-gap: 50px 30px;
+  justify-content: space-between;
+}
 
 .benefits__col {}
 
@@ -814,11 +852,23 @@ input:checked~.tab-content {
 
 .item-benefits {}
 
-.item-benefits__icon {}
+.item-benefits__icon {
+  margin-bottom: 10px;
+}
 
-.item-benefits__title {}
+.item-benefits__title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 120%;
+  color: #212429;
+  margin-bottom: 10px;
+}
 
-.item-benefits__desc {}
+.item-benefits__desc {
+  font-size: 15px;
+  line-height: 140%;
+  color: #212429;
+}
 
 
 /*----------Кнопка Наверх----------*/
