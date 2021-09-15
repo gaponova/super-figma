@@ -740,7 +740,7 @@ input:checked~.tab-content {
 
 .tab-content__item {
   width: calc(50% - 30px);
-  margin: 0 15px;
+  margin: 0 15px 30px;
 }
 
 .tab-content__item-info {
@@ -752,10 +752,6 @@ input:checked~.tab-content {
 
 .homework {
   margin-top: 25px;
-}
-
-.homework-task {
-  margin-bottom: 40px;
 }
 
 .homework-task__title {
@@ -1139,8 +1135,39 @@ input:checked~.tab-content {
   }
 
   /* Start Адаптив для аккордеона */
+  .tab-label {
+    padding: 25px;
+  }
+
+  .tab-label::after {
+    width: 2rem;
+    height: 2rem;
+    top: 53px;
+    right: 23px;
+  }
+
+  .tab-label__title {
+    font-size: inherit;
+  }
+
+  .tab-label__subtitle {
+    font-size: 20px;
+  }
+
+  .tab-label__les {
+    font-size: 12px;
+  }
+
+  .tab-content {
+    padding: 0 25px;
+  }
+
   .tab-content__item {
     width: calc(100% - 30px);
+  }
+
+  .first-chapter__row {
+    padding-bottom: 20px;
   }
 
   .first-chapter__item {
@@ -1226,16 +1253,48 @@ input:checked~.tab-content {
   }
 
   .tab-label::after {
+    width: 2rem;
+    height: 2rem;
     top: 53px;
     right: 23px;
+  }
+
+  .tab-label__title {
+    font-size: inherit;
+  }
+
+  .tab-label__subtitle {
+    font-size: 20px;
   }
 
   .tab-content {
     padding: 0 25px;
   }
 
-  /* End Адаптив для аккордеона */
+  .tab-label__les {
+    font-size: 12px;
+  }
 
+  /* Start Адаптив для аккордеона */
+  .tab-label {
+    padding: 15px;
+  }
+
+  .tab-content {
+    padding: 0 15px;
+  }
+
+  .tab-label::after {
+    top: 42px;
+    right: 14px;
+  }
+
+  .tab-label::after {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  /* End Адаптив для аккордеона */
 
 }
 
@@ -1303,6 +1362,19 @@ input:checked~.tab-content {
   .program-course__title {
     font-size: 30px;
   }
+
+  /* Start Адаптив для аккордеона */
+  .tab-label__title {
+    font-size: 14px;
+  }
+
+
+
+  .tab-label__subtitle {
+    font-size: 16px;
+  }
+
+  /* End Адаптив для аккордеона */
 
   #toTop {
     bottom: 5px;
