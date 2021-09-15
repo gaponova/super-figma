@@ -469,6 +469,7 @@ body {
 .work__gallery {
   max-width: 1920px;
   /* width: 2570px; */
+  margin: 0 auto;
 }
 
 .gallery-items {
@@ -591,7 +592,13 @@ body {
 
 .program-desc {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 86px;
+  margin-bottom: 50px;
+}
+
+.program-desc__info {
+  max-width: 965px;
+  margin: 0 auto 61px;
 }
 
 .info-program__text:not(:last-child) {
@@ -605,9 +612,6 @@ body {
 
 /* accordion */
 
-
-
-
 .tab {
   position: relative;
   width: 100%;
@@ -615,8 +619,6 @@ body {
   border: 1px solid #18A0FB;
   margin-bottom: 30px;
 }
-
-.tab-decor {}
 
 .tab-decor__element {
   position: absolute;
@@ -663,8 +665,8 @@ body {
 
 .tab-label::after {
   position: absolute;
-  top: 50px;
-  right: 70px;
+  top: 69px;
+  right: 78px;
   content: "";
   background: url(../img/icon-plus.svg) center center no-repeat;
   width: 3rem;
@@ -675,25 +677,25 @@ body {
 
 .tab-label__title {
   display: block;
-  font-size: 1.8rem;
-  line-height: 27px;
   font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
   color: #18A0FB;
 }
 
 .tab-label__subtitle {
   display: block;
-  font-size: 2.4rem;
-  line-height: 36px;
-  font-weight: 700;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
   color: #212429;
 }
 
 .tab-label__les {
   display: block;
-  font-size: 1.5rem;
-  line-height: 22px;
   font-weight: 500;
+  font-size: 15px;
+  line-height: 150%;
   color: #18A0FB;
 }
 
@@ -711,11 +713,11 @@ body {
 
 
 /* checked */
-
 /* input:checked+.tab-label {
   padding-bottom: 20px;
   transition: all .3s;
 } */
+
 
 input:checked+.tab-label::after {
   transform: rotate(135deg);
@@ -733,52 +735,23 @@ input:checked~.tab-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 -15px 18px;
 }
 
 .tab-content__item {
-  flex-basis: 500px;
-}
-
-.tab-content__item:last-child {
-  flex-basis: 570px;
+  width: calc(50% - 30px);
+  margin: 0 15px;
 }
 
 .tab-content__item-info {
-  font-size: 1.5rem;
-  line-height: 22.5px;
-  font-weight: 500;
-  color: #b1bdca;
-  margin-bottom: 10px;
-}
-
-.tab-content__item-info:last-child {
-  margin-bottom: 50px;
-}
-
-.tab-content-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-.tab-content-list__item {
-  font-size: 1.8rem;
-  line-height: 22.5px;
-  font-weight: 500;
+  font-size: 15px;
+  line-height: 150%;
   color: #212429;
-  background: url(../img/check.svg) 5px 5px no-repeat;
-  padding-left: 20px;
   margin-bottom: 10px;
-}
-
-.first-chapter__row {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .homework {
-  margin-top: 40px;
-
+  margin-top: 25px;
 }
 
 .homework-task {
@@ -789,29 +762,46 @@ input:checked~.tab-content {
   font-size: 1.8rem;
   line-height: 22.5px;
   font-weight: 700;
-  color: #7ee8ff;
+  color: #18A0FB;
   margin-bottom: 10px;
 }
 
-.homework-task__info {
-  font-size: 1.5rem;
-  line-height: 22.5px;
+.homework-task__subtitle {
+  font-size: 15px;
+  line-height: 150%;
+  color: #212429;
+}
+
+.tab-content-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.tab-content-list__item {
+  font-size: 15px;
+  line-height: 140%;
   font-weight: 500;
-  color: #b1bdca;
+  color: #212429;
+  background: url(../img/check.svg) 4px 3px no-repeat;
+  padding-left: 32px;
   margin-bottom: 10px;
 }
 
-.homework-result__title {
-  font-size: 2.4rem;
-  line-height: 22.5px;
-  font-weight: 700;
-  color: #ffffff;
-  margin-bottom: 40px;
+.first-chapter__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 40px;
 }
 
+.first-chapter__item {
+  width: 50%;
+}
 
-
-
+.first-chapter__item img {
+  display: block;
+}
 
 
 /*----------Кнопка Наверх----------*/
@@ -886,8 +876,6 @@ input:checked~.tab-content {
     flex-direction: column-reverse;
   }
 
-
-
   .author-awards {
     justify-content: center;
   }
@@ -902,6 +890,7 @@ input:checked~.tab-content {
 
   .program-header__img {
     max-width: 700px;
+    right: 0%;
   }
 
   #toTop {
@@ -1149,6 +1138,25 @@ input:checked~.tab-content {
     left: 150px;
   }
 
+  /* Start Адаптив для аккордеона */
+  .tab-content__item {
+    width: calc(100% - 30px);
+  }
+
+  .first-chapter__item {
+    width: 100%;
+  }
+
+  .first-chapter__item img {
+    margin: 0 auto;
+  }
+
+  .first-chapter__item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  /* End Адаптив для аккордеона */
+
 }
 
 @media only screen and (max-width: 580px) {
@@ -1156,7 +1164,6 @@ input:checked~.tab-content {
   .intro {
     padding-bottom: 40px;
   }
-
 
   .intro__info {
     padding-bottom: 30px;
@@ -1212,6 +1219,24 @@ input:checked~.tab-content {
   .program-header__img {
     display: none;
   }
+
+  /* Start Адаптив для аккордеона */
+  .tab-label {
+    padding: 25px;
+  }
+
+  .tab-label::after {
+    top: 53px;
+    right: 23px;
+  }
+
+  .tab-content {
+    padding: 0 25px;
+  }
+
+  /* End Адаптив для аккордеона */
+
+
 }
 
 @media screen and (max-width: 440px) {
