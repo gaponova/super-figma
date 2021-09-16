@@ -892,8 +892,6 @@ input:checked~.tab-content {
   margin: 0 auto 48px;
 }
 
-.certificate-example {}
-
 .certificate-example::after {
   content: "";
   display: block;
@@ -905,7 +903,49 @@ input:checked~.tab-content {
   background: url(../img/certificate__add.svg) no-repeat;
 }
 
+/*----------order---------*/
 
+.order {}
+
+.order__container {}
+
+.order__title {}
+
+.intro-course {}
+
+.order-course {}
+
+.intro-course__logo {}
+
+.intro-course__title {}
+
+.order__body {}
+
+.order__price {}
+
+.price-order {}
+
+.btn_order {}
+
+.order__currency {}
+
+.currency {}
+
+.currency__title {}
+
+.currency__item {}
+
+.order__credit {}
+
+.credit {}
+
+.credit__title {}
+
+.credit__price {}
+
+.order__btn {}
+
+.order-btn {}
 
 /*----------Кнопка Наверх----------*/
 
