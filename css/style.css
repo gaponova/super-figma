@@ -801,7 +801,7 @@ input:checked~.tab-content {
 /*----------benefits----------*/
 
 .benefits {
-  padding: 100px 0;
+  padding: 100px 0 110px;
   background: #E9EBF1;
 }
 
@@ -869,6 +869,42 @@ input:checked~.tab-content {
   line-height: 140%;
   color: #212429;
 }
+
+/*----------certificate---------*/
+
+.certificate {
+  position: relative;
+  text-align: center;
+  background: #fff;
+  padding: 97px 0 100px;
+}
+
+.certificate__container {}
+
+.certificate__title {}
+
+.certificate__info {
+  max-width: 970px;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #212429;
+  margin: 0 auto 48px;
+}
+
+.certificate-example {}
+
+.certificate-example::after {
+  content: "";
+  display: block;
+  width: 258px;
+  height: 202px;
+  position: absolute;
+  bottom: -21px;
+  right: 41%;
+  background: url(../img/certificate__add.svg) no-repeat;
+}
+
 
 
 /*----------Кнопка Наверх----------*/
@@ -1178,6 +1214,10 @@ input:checked~.tab-content {
 
   .benefits__title::before {
     top: -65px;
+  }
+
+  .certificate-example::after {
+    display: none;
   }
 
 }
