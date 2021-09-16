@@ -1017,6 +1017,11 @@ input:checked~.tab-content {
     padding-top: 40px;
   }
 
+  .benefits__row {
+    grid-template-columns: minmax(300px, 400px) minmax(300px, 400px);
+    justify-content: center;
+  }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -1163,6 +1168,18 @@ input:checked~.tab-content {
     text-align: center;
   }
 
+  .benefits {
+    padding-bottom: 40px;
+  }
+
+  .benefits__container::before {
+    display: none;
+  }
+
+  .benefits__title::before {
+    top: -65px;
+  }
+
 }
 
 @media only screen and (max-width: 880px) {}
@@ -1255,6 +1272,11 @@ input:checked~.tab-content {
 
   /* End Адаптив для аккордеона */
 
+  .benefits__row {
+    grid-template-columns: minmax(300px, 650px);
+    grid-row-gap: 30px;
+  }
+
 }
 
 @media only screen and (max-width: 580px) {
@@ -1294,6 +1316,10 @@ input:checked~.tab-content {
 
   .author-info__achievement-title {
     font-size: 42px;
+  }
+
+  .author-social {
+    margin-bottom: 20px;
   }
 
   .author-awards {
