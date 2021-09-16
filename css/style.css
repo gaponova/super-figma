@@ -936,6 +936,7 @@ input:checked~.tab-content {
   margin: 0 auto;
   font-size: 30px;
   line-height: 150%;
+  text-align: center;
   color: #212429;
   margin-bottom: 13px;
 }
@@ -1137,7 +1138,31 @@ input:checked~.tab-content {
   }
 }
 
-@media only screen and (max-width: 1120px) {}
+@media only screen and (max-width: 1120px) {
+
+  .order__container::before {
+    display: none;
+  }
+
+  .order-course .intro-course__title {
+    line-height: 50px;
+  }
+
+  .order__body {
+    background: url(../img/order-bg.png) no-repeat;
+    background-position: top center;
+    padding: 30px 0;
+  }
+
+  .price-order {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px 20px;
+    margin: 0 auto;
+    border-radius: 20px;
+    border: 1px solid #18a0fb;
+    box-shadow: 0 0 69px 12px rgba(255, 255, 255, 0.7);
+  }
+}
 
 @media only screen and (max-width: 1050px) {
 
@@ -1351,8 +1376,16 @@ input:checked~.tab-content {
     top: -65px;
   }
 
+  .certificate {
+    padding: 40px 0;
+  }
+
   .certificate-example::after {
     display: none;
+  }
+
+  .order {
+    padding: 40px 0;
   }
 
 }
@@ -1381,7 +1414,6 @@ input:checked~.tab-content {
   .intro-popular::after {
     display: none;
   }
-
 
   .author-info__photo {
     max-width: 450px;
@@ -1450,6 +1482,10 @@ input:checked~.tab-content {
   .benefits__row {
     grid-template-columns: minmax(300px, 650px);
     grid-row-gap: 30px;
+  }
+
+  .order__title {
+    font-size: 26px;
   }
 
 }
@@ -1568,16 +1604,20 @@ input:checked~.tab-content {
 
   /* End Адаптив для аккордеона */
 
+  .order-course .intro-course__title {
+    font-size: 46px;
+  }
+
+  .order__body {
+    background: none;
+  }
+
 }
 
 @media screen and (max-width: 440px) {
 
   .header__burger {
     margin-right: 10px;
-  }
-
-  .intro-course__title {
-    font-size: 38px;
   }
 
   .intro-course__subtitle {
@@ -1601,6 +1641,7 @@ input:checked~.tab-content {
   .intro-course__title {
     line-height: 50px;
     margin: 10px 0 20px;
+    font-size: 38px;
   }
 
   .intro-course__subtitle {
@@ -1647,6 +1688,30 @@ input:checked~.tab-content {
   }
 
   /* End Адаптив для аккордеона */
+
+  .order {
+    padding: 30px 0 0;
+  }
+
+  .order__title {
+    font-size: 22px;
+  }
+
+  .order-course .intro-course__title {
+    font-size: 38px;
+  }
+
+  .order__body {
+    padding: 0;
+  }
+
+  .price-order__sum {
+    font-size: 40px;
+  }
+
+  .order__currency {
+    margin-bottom: 30px;
+  }
 
   #toTop {
     bottom: 5px;
