@@ -232,6 +232,10 @@ body {
 }
 
 .intro-course__title span {
+  margin-left: 6px;
+}
+
+.intro-course__title span {
   font-weight: bold;
 }
 
@@ -905,43 +909,134 @@ input:checked~.tab-content {
 
 /*----------order---------*/
 
-.order {}
+.order {
+  position: relative;
+  padding: 93px 0 100px 0;
+}
 
-.order__container {}
+.order__container {
+  position: relative;
+}
 
-.order__title {}
+.order__container::before {
+  content: "";
+  display: block;
+  width: 805px;
+  height: 805px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: -136px;
+  background: url(../img/benefits-light.png) no-repeat;
+  /* border: 1px solid red; */
+}
 
-.intro-course {}
+.order__title {
+  max-width: 698px;
+  margin: 0 auto;
+  font-size: 30px;
+  line-height: 150%;
+  color: #212429;
+  margin-bottom: 13px;
+}
 
-.order-course {}
+.order-course {
+  margin: 0 auto;
+}
 
-.intro-course__logo {}
-
-.intro-course__title {}
-
-.order__body {}
+.order__body {
+  position: relative;
+  min-height: 750px;
+  background: url(../img/order-bg.png) no-repeat;
+  background-position: -162px -37px;
+  padding: 60px 0 45px;
+}
 
 .order__price {}
 
-.price-order {}
+.price-order {
+  max-width: 316px;
+  text-align: center;
+  margin-left: auto;
+  padding-top: 27px;
+  margin-right: 76px;
+}
 
-.btn_order {}
+.price-order__title {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 124%;
+  color: #212429;
+  margin-bottom: 10px;
+}
 
-.order__currency {}
+.price-order__sum {
+  display: block;
+  font-size: 50px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #212429;
+  margin-bottom: 20px;
+}
+
+.btn_price {
+  margin: 0 0 20px;
+}
+
+.order__currency {
+  margin-bottom: 50px;
+}
 
 .currency {}
 
-.currency__title {}
+.currency__title {
+  font-size: 15px;
+  line-height: 122%;
+  color: #212429;
+  opacity: 0.6;
+}
 
-.currency__item {}
+.currency__item {
+  font-size: 15px;
+  line-height: 122%;
+  color: #212429;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.currency__item:hover {
+  color: #18A0FB;
+}
 
 .order__credit {}
 
 .credit {}
 
-.credit__title {}
+.credit__title {
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 121%;
+  color: #212429;
+  margin-bottom: 16px;
+}
 
-.credit__price {}
+.credit__price {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 150%;
+  color: #212429;
+  margin-bottom: 16px;
+}
+
+.credit__ru {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 122%;
+  color: #212429;
+  opacity: 0.6;
+  margin-bottom: 16px;
+}
 
 .order__btn {}
 
