@@ -1035,7 +1035,7 @@ input:checked~.tab-content {
 
 .join {
   margin-top: -15px;
-  margin-bottom: 40px;
+  margin-bottom: 100px;
 }
 
 .join__body {
@@ -1060,6 +1060,30 @@ input:checked~.tab-content {
   line-height: 140%;
   color: #fff;
   margin-bottom: 12px;
+}
+
+/*----------guarantee----------*/
+
+.guarantee {}
+
+.guarantee__body {
+  text-align: center;
+  padding: 0 15px 20px;
+  border-radius: 20px;
+  background: #fff;
+}
+
+.guarantee__info {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.guarantee__text {
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #212429;
+  margin-bottom: 20px;
 }
 
 /*----------Кнопка Наверх----------*/
