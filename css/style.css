@@ -911,7 +911,7 @@ input:checked~.tab-content {
 
 .order {
   position: relative;
-  padding: 93px 0 100px 0;
+  padding: 93px 0 0 0;
 }
 
 .order__container {
@@ -953,8 +953,6 @@ input:checked~.tab-content {
   padding: 60px 0 45px;
 }
 
-.order__price {}
-
 .price-order {
   max-width: 316px;
   text-align: center;
@@ -988,8 +986,6 @@ input:checked~.tab-content {
   margin-bottom: 50px;
 }
 
-.currency {}
-
 .currency__title {
   font-size: 15px;
   line-height: 122%;
@@ -1008,10 +1004,6 @@ input:checked~.tab-content {
 .currency__item:hover {
   color: #18A0FB;
 }
-
-.order__credit {}
-
-.credit {}
 
 .credit__title {
   font-size: 19px;
@@ -1039,9 +1031,36 @@ input:checked~.tab-content {
   margin-bottom: 16px;
 }
 
-.order__btn {}
+/*----------join----------*/
 
-.order-btn {}
+.join {
+  margin-top: -15px;
+  margin-bottom: 40px;
+}
+
+.join__body {
+  text-align: center;
+  background: #0ACF83;
+  padding: 35px 15px 28px;
+  border-radius: 20px;
+}
+
+.join__title {
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 140%;
+  color: #fff;
+  margin-bottom: 3px;
+}
+
+.join__subtitle,
+.join__action {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 140%;
+  color: #fff;
+  margin-bottom: 12px;
+}
 
 /*----------Кнопка Наверх----------*/
 
@@ -1073,8 +1092,6 @@ input:checked~.tab-content {
 }
 
 /*----------Адаптив----------*/
-
-@media only screen and (max-width: 1700px) {}
 
 @media only screen and (max-width: 1440px) {
 
@@ -1390,8 +1407,6 @@ input:checked~.tab-content {
 
 }
 
-@media only screen and (max-width: 880px) {}
-
 @media only screen and (max-width: 768px) {
 
   .title {
@@ -1612,6 +1627,15 @@ input:checked~.tab-content {
     background: none;
   }
 
+  .join {
+    margin-top: -140px;
+  }
+
+  .join__subtitle,
+  .join__action {
+    font-size: 26px;
+  }
+
 }
 
 @media screen and (max-width: 440px) {
@@ -1716,5 +1740,10 @@ input:checked~.tab-content {
   #toTop {
     bottom: 5px;
     right: 5px;
+  }
+
+  .join__subtitle,
+  .join__action {
+    font-size: 22px;
   }
 }
