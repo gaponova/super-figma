@@ -507,10 +507,6 @@ body {
   object-fit: cover;
 }
 
-.works-slider {
-  display: none;
-}
-
 /*----------program----------*/
 
 .program {
@@ -1439,8 +1435,9 @@ input:checked~.tab-content {
   }
 
   .order__body {
-    background: url(../img/order-bg.png) no-repeat;
-    background-position: top center;
+    background: none;
+    /* background: url(../img/order-bg.png) no-repeat;
+    background-position: top center; */
     padding: 30px 0;
   }
 
