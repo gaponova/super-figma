@@ -69,7 +69,13 @@ body {
   border-radius: 10px;
   text-decoration: none;
   z-index: 2;
+  transition: 0.3s;
 }
+
+.btn:hover {
+  box-shadow: 0 14px 20px -5px rgb(179 221 255);
+}
+
 
 .btn_blue {
   color: #fff;
@@ -156,6 +162,12 @@ body {
   line-height: 20px;
   color: #212429;
   text-decoration: none;
+  transition: 0.3s;
+  ;
+}
+
+.header__link:hover {
+  color: #18a0fb;
 }
 
 .btn_order {
@@ -493,6 +505,10 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.works-slider {
+  display: none;
 }
 
 /*----------program----------*/
@@ -1520,7 +1536,7 @@ input:checked~.tab-content {
 
 }
 
-@media screen and (max-width: 991px) {
+@media only screen and (max-width: 991px) {
 
   /* body.lock {
     overflow: hidden;
@@ -1946,7 +1962,7 @@ input:checked~.tab-content {
 
 }
 
-@media screen and (max-width: 440px) {
+@media only screen and (max-width: 440px) {
 
   .header__burger {
     margin-right: 10px;
@@ -2013,10 +2029,13 @@ input:checked~.tab-content {
     font-size: 14px;
   }
 
-
-
   .tab-label__subtitle {
     font-size: 16px;
+  }
+
+  .tab-label::after {
+    top: 14px;
+    right: 14px;
   }
 
   /* End Адаптив для аккордеона */
