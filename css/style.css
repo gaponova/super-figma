@@ -850,12 +850,6 @@ input:checked~.tab-content {
   justify-content: space-between;
 }
 
-.benefits__col {}
-
-.benefits__item {}
-
-.item-benefits {}
-
 .item-benefits__icon {
   margin-bottom: 10px;
 }
@@ -882,10 +876,6 @@ input:checked~.tab-content {
   background: #fff;
   padding: 97px 0 100px;
 }
-
-.certificate__container {}
-
-.certificate__title {}
 
 .certificate__info {
   max-width: 970px;
@@ -1092,17 +1082,13 @@ input:checked~.tab-content {
 
 .edu {
   background: #fff;
-  padding: 100px 0;
+  padding: 100px 0 45px;
 }
-
-.edu__container {}
 
 .edu__info {
   max-width: 960px;
   margin: 0 auto;
 }
-
-.edu__title {}
 
 .edu__text {
   font-size: 18px;
@@ -1132,14 +1118,10 @@ input:checked~.tab-content {
   justify-content: space-between;
 }
 
-.edu__column {}
-
 .edu__item {
   flex: 0 1 43%;
   margin-bottom: 34px;
 }
-
-.item-edu {}
 
 .item-edu__icon {
   margin-bottom: 10px;
@@ -1156,6 +1138,47 @@ input:checked~.tab-content {
 .item-edu__info {
   font-size: 15px;
   line-height: 140%;
+  color: #212429;
+}
+
+/*----------questions----------*/
+
+.questions {
+  background: #fff;
+  padding: 0 0 58px;
+}
+
+.questions__container {}
+
+.questions__title {
+  margin-bottom: 55px;
+}
+
+.questions__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.questions__col {
+  flex: 0 1 43%;
+}
+
+.questions-item {
+  margin-bottom: 44px;
+}
+
+.questions-item__title {
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 123%;
+  color: #212429;
+  margin-bottom: 10px;
+}
+
+.questions-item__answer {
+  font-size: 16px;
+  line-height: 149.8%;
   color: #212429;
 }
 
@@ -1247,6 +1270,10 @@ input:checked~.tab-content {
   }
 
   .edu__body {
+    justify-content: space-around;
+  }
+
+  .questions__row {
     justify-content: space-around;
   }
 
@@ -1625,6 +1652,10 @@ input:checked~.tab-content {
     flex: 0 1 100%;
   }
 
+  .questions__col {
+    flex: 0 1 100%;
+  }
+
 }
 
 @media only screen and (max-width: 580px) {
@@ -1859,13 +1890,17 @@ input:checked~.tab-content {
     margin-bottom: 30px;
   }
 
-  #toTop {
-    bottom: 5px;
-    right: 5px;
-  }
-
   .join__subtitle,
   .join__action {
     font-size: 22px;
+  }
+
+  .questions-item__title {
+    font-size: 20px;
+  }
+
+  #toTop {
+    bottom: 5px;
+    right: 5px;
   }
 }
