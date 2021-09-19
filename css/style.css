@@ -1148,10 +1148,21 @@ input:checked~.tab-content {
   padding: 0 0 58px;
 }
 
-.questions__container {}
-
 .questions__title {
-  margin-bottom: 55px;
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto 55px;
+}
+
+.questions__title::before {
+  content: "";
+  display: block;
+  width: 102px;
+  height: 62px;
+  position: absolute;
+  top: -58px;
+  left: -14px;
+  background: url(../img/Irina.svg) no-repeat;
 }
 
 .questions__row {
@@ -1181,6 +1192,109 @@ input:checked~.tab-content {
   line-height: 149.8%;
   color: #212429;
 }
+
+/*----------footer----------*/
+
+.footer {
+  background: #E5E5E5;
+  padding: 60px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before {
+  content: "";
+  display: block;
+  width: 805px;
+  height: 805px;
+  position: absolute;
+  top: -240px;
+  right: 185px;
+  background: url(../img/benefits-light.png) no-repeat;
+  z-index: 1;
+  opacity: 0.8;
+  /* border: 1px solid red; */
+}
+
+.footer__container {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+.footer__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__item {}
+
+.item-copyright {}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 47px;
+}
+
+.item-copyright__info {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 125%;
+  color: #83919F;
+}
+
+.item-links {
+  margin-left: 87px;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.social-icon:not(:last-child) {
+  margin-right: 30px;
+}
+
+.item-links__rules {}
+
+.item-links__rule {
+  display: block;
+  font-size: 13px;
+  line-height: 123%;
+  color: #83919F;
+  margin-bottom: 10px;
+}
+
+.item-links__rule:hover {
+  text-decoration: underline;
+}
+
+.item-network {
+  flex-basis: 270px;
+}
+
+.item-network__phone {}
+
+.item-network__number,
+.item-network__adress {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 123%;
+  color: #83919F;
+}
+
+.item-network__desc {
+  font-size: 13px;
+  line-height: 16px;
+  color: #83919F;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
 
 /*----------Кнопка Наверх----------*/
 
@@ -1378,6 +1492,32 @@ input:checked~.tab-content {
     justify-content: center;
   }
 
+  .footer {
+    text-align: center;
+    padding: 40px 0 10px;
+  }
+
+  .footer__row {
+    display: block;
+  }
+
+  .footer__item {
+    width: 100%;
+    margin: 0 auto 40px;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .item-links {
+    margin: 0 auto 40px;
+  }
+
+  .item-network {
+    flex-basis: auto;
+  }
+
 }
 
 @media screen and (max-width: 991px) {
@@ -1544,11 +1684,21 @@ input:checked~.tab-content {
     display: none;
   }
 
+  .edu {
+    padding-top: 40px;
+  }
+
   .order {
     padding: 40px 0;
   }
 
+  .guarantee {
+    margin-bottom: 40px;
+  }
 
+  .questions {
+    padding-bottom: 0;
+  }
 
 }
 
@@ -1650,6 +1800,11 @@ input:checked~.tab-content {
 
   .edu__item {
     flex: 0 1 100%;
+  }
+
+  .questions__title::before {
+    top: -66px;
+    left: 90px;
   }
 
   .questions__col {
