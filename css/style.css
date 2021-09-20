@@ -507,6 +507,12 @@ body {
   object-fit: cover;
 }
 
+/*----------slider----------*/
+
+.slider__contaniner {
+  display: none;
+}
+
 /*----------program----------*/
 
 .program {
@@ -1742,6 +1748,27 @@ input:checked~.tab-content {
     max-width: 450px;
   }
 
+  .gallery {
+    display: none;
+  }
+
+  .slider__contaniner {
+    display: block;
+  }
+
+  .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 20px;
+  }
+
+  .owl-theme .owl-dots .owl-dot span {
+    background: #dadada;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: #18A0FB;
+  }
+
   .program-header {
     padding: 20px;
   }
@@ -1929,7 +1956,7 @@ input:checked~.tab-content {
   }
 
   .tab-label::after {
-    top: 42px;
+    top: 14px;
     right: 14px;
   }
 
@@ -2000,7 +2027,6 @@ input:checked~.tab-content {
   .intro-popular {
     padding: 20px 10px;
     border-radius: 0;
-
   }
 
   .author-info__photo {
@@ -2028,11 +2054,6 @@ input:checked~.tab-content {
 
   .tab-label__subtitle {
     font-size: 16px;
-  }
-
-  .tab-label::after {
-    top: 14px;
-    right: 14px;
   }
 
   /* End Адаптив для аккордеона */
