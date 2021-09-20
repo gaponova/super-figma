@@ -76,7 +76,6 @@ body {
   box-shadow: 0 14px 20px -5px rgb(179 221 255);
 }
 
-
 .btn_blue {
   color: #fff;
   background-color: #18A0FB;
@@ -96,9 +95,7 @@ body {
   /* overflow: hidden; */
 }
 
-
 /*----------header----------*/
-
 
 .header {
   position: sticky;
@@ -163,7 +160,6 @@ body {
   color: #212429;
   text-decoration: none;
   transition: 0.3s;
-  ;
 }
 
 .header__link:hover {
@@ -201,9 +197,7 @@ body {
   }
 }
 
-
 /*----------intro----------*/
-
 
 .intro {
   padding: 90px 0 95px;
@@ -316,9 +310,7 @@ body {
   margin-top: 41px;
 }
 
-
 /*----------author----------*/
-
 
 .author {
   position: relative;
@@ -475,9 +467,7 @@ body {
   color: #18a0fb;
 }
 
-
 /*----------works----------*/
-
 
 .works {
   padding: 96px 0 150px;
@@ -1248,17 +1238,11 @@ input:checked~.tab-content {
   z-index: 2;
 }
 
-
-
 .footer__row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
-.footer__item {}
-
-.item-copyright {}
 
 .footer__logo {
   display: block;
@@ -1286,8 +1270,6 @@ input:checked~.tab-content {
   margin-right: 30px;
 }
 
-.item-links__rules {}
-
 .item-links__rule {
   display: block;
   font-size: 13px;
@@ -1303,8 +1285,6 @@ input:checked~.tab-content {
 .item-network {
   flex-basis: 270px;
 }
-
-.item-network__phone {}
 
 .item-network__number,
 .item-network__adress {
@@ -1342,8 +1322,6 @@ input:checked~.tab-content {
   box-shadow: 0 3px 3px 0px #d8dde2;
   z-index: 10;
 }
-
-#toTop:hover {}
 
 /*Убирает подсветку-обводку с элемента на мобильных*/
 #toTop:focus,
@@ -1726,7 +1704,6 @@ input:checked~.tab-content {
   .questions {
     padding-bottom: 0;
   }
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -1746,7 +1723,6 @@ input:checked~.tab-content {
   .intro-course {
     margin: 0 10px;
   }
-
 
   .intro-popular::after {
     display: none;
@@ -1927,15 +1903,9 @@ input:checked~.tab-content {
   }
 
   /* Start Адаптив для аккордеона */
-  .tab-label {
-    padding: 25px;
-  }
 
-  .tab-label::after {
-    width: 2rem;
-    height: 2rem;
-    top: 53px;
-    right: 23px;
+  .tab-label {
+    padding: 15px;
   }
 
   .tab-label__title {
@@ -1946,17 +1916,8 @@ input:checked~.tab-content {
     font-size: 20px;
   }
 
-  .tab-content {
-    padding: 0 25px;
-  }
-
   .tab-label__les {
     font-size: 12px;
-  }
-
-  /* Start Адаптив для аккордеона */
-  .tab-label {
-    padding: 15px;
   }
 
   .tab-content {
@@ -1964,13 +1925,10 @@ input:checked~.tab-content {
   }
 
   .tab-label::after {
-    top: 14px;
-    right: 14px;
-  }
-
-  .tab-label::after {
     width: 1.5rem;
     height: 1.5rem;
+    top: 14px;
+    right: 14px;
   }
 
   /* End Адаптив для аккордеона */
