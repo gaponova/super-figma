@@ -468,6 +468,11 @@ body {
   line-height: 140%;
   color: #fff;
   margin-left: 20px;
+  transition: 0.3s;
+}
+
+.author-social__link:hover {
+  color: #18a0fb;
 }
 
 
@@ -622,12 +627,16 @@ body {
   margin: 0 auto 61px;
 }
 
-.info-program__text:not(:last-child) {
+.info-program__text {
   font-size: 18px;
   line-height: 140%;
   text-align: center;
   color: #212429;
   margin-bottom: 20px;
+}
+
+.info-program__text:last-child {
+  margin-bottom: 0;
 }
 
 /* Start accordion */
