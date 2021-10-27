@@ -166,8 +166,16 @@ body {
   color: #18a0fb;
 }
 
+.nav-active {
+  color: #18a0fb;
+}
+
 .btn_order {
   margin-left: 40px;
+}
+
+.btn_order.nav-active {
+  color: #fff;
 }
 
 .header__burger {
@@ -987,6 +995,10 @@ input:checked~.tab-content {
 
 .btn_price {
   margin: 0 0 20px;
+}
+
+.btn_price.nav-active {
+  color: #fff;
 }
 
 .order__currency {

@@ -6,8 +6,8 @@ $sections.each(function(i,el){
  var scroll = $(window).scrollTop();
  var id = $(el).attr('id');
 if( scroll > top && scroll < bottom){
-     $('header__link.active').removeClass('active');
-$('a[href="#'+id+'"]').addClass('active');
+  $('a.nav-active').removeClass('nav-active');
+  $('a[href="#'+id+'"]').addClass('nav-active');
 
  }
 })
